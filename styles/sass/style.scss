@@ -1,11 +1,8 @@
 @import 'variables';
 @import 'setup';
+@import 'general-styles';
+@import 'home-styles';
 
 // font-family: 'IM Fell English', serif;
 // font-family: 'Roboto', sans-serif;
 
-.wrapper {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-}
