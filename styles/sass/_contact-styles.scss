@@ -1,0 +1,122 @@
+// contact page styles 
+
+// header 
+
+.contact-header {
+    background-image: url(../project-1-boat-ride-adventures/Boat-Ride-Adventures-final-assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    padding: 50px 0 40px;
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50%;
+
+        h1 {
+            max-width: 60%;
+            font-size: 7.9rem;
+            color: #fff;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: initial;
+        }
+    }
+
+}
+
+// main section 
+
+.get-in-touch {
+    background: $ice;
+    padding: 90px 0 200px;
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .socials {
+            display: flex;
+            color: $twilight;
+            
+            li {
+                margin-right: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.social-location {
+    display: flex;
+    flex-direction: column;
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+}
+
+// form 
+
+.form {
+    background: $twilight;
+    box-shadow: 20px 20px $dandelion;
+    width: 65%;
+    position: absolute;
+    right: 0;
+    top: -230px;
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 30px;
+        
+        .name,
+        .email {
+            background-color: $twilight;
+            color: #fff;
+            width: calc((100% / 2) - 20px);
+            margin: 10px;
+            height: 70px;
+            display: flex;
+            padding: 20px;
+            border: none;
+            border-bottom: 3px solid $dandelion;
+        }
+    }
+}
+
+textarea {
+    background-color: $twilight;
+    color: #fff;
+    resize: none;
+    width: 100%;
+    height: 200px;
+    margin: 30px 10px 30px;
+    padding: 20px;
+    border: 3px solid $dandelion;
+}
+
+.button-2 {
+    display: inline-block;
+    background-color: $dandelion;
+    border: 1px solid transparent;
+    font-size: 2.24rem;
+    line-height: 41.6px;
+    margin: 10px;
+    
+    // padding: 0 15px;
+    font-family: $heading-font;
+    color: $twilight;
+    text-transform: uppercase;
+    
+    width: 100%;
+    height: 50px;
+}

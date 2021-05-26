@@ -1,4 +1,7 @@
 
+// home page styles 
+
+
 // header styles
 
 .main-header {
@@ -96,53 +99,41 @@ i {
     background: $twilight;
     color: #fff;
     position: relative;
-    height: 90vh;
-    padding: 70px 0;
+    padding: 100px 70px;
     
 }
-//     .about-container {
-//         display: flex;
-//         flex-direction: column-reverse;
-//         justify-content: space-between;
-//         // flex-wrap: wrap;
-//         // position: relative;
-        
-//         div {
-//             width: calc(50% - 80px);
-            
-
-//             p {
-//                 padding: 0 0 40px;
-//             }
-//         }
-//     }
-// }
 
 .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 90px;
+
+    p {
+        padding: 10px 0 40px;
+    }
+}
+
+.locations-container {
+    grid-row: 2 / 3;
+}
+
+.programs-container {
+    grid-column: 2 / 3; 
+}
+
+
+
+.locations {
     display: flex;
-    
+    flex-direction: column;
+
+    h3,
+    a {
+        align-self: flex-end;
+    }
 }
 
-.yacht-container {
-    // display: flex;
-    width: 50%;
-    // flex-direction: column;
-}
-
-.rope-container {
-    // display: flex;
-    width: 50%;
-    
-    
-}
-
-.programs {
-    align-self: flex-end;
-}
-
-// .programs {
-//     display: flex;
-// }
 .rope-boat {
     position: absolute;
     right: 0;
@@ -163,40 +154,6 @@ i {
     }
 }
 
-// .locations {
-//     align-self: flex-end;
-// }
-
-
-
-
-
-// .yacht {
-//     position: absolute;
-//     left: 0;
-//     top: -30px;
-    
-// }
-
-// .rope-boat {
-//     position: absolute;
-//     right: 0;
-//     bottom: -30px;
-// }
-
-// .programs {
-//     h3 {
-//         text-align: left;
-
-        
-//     }
-// }
-
-.yacht {
-    h3 {
-        text-align: right;
-    }
-}
 
 // section 3 styles
 
