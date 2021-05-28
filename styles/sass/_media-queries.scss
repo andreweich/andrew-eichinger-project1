@@ -59,17 +59,20 @@
         padding-bottom: 0;
         margin-bottom: 0;
 
-        .header-content h1 {
-            font-size: 5rem;
+        .header-content {
             align-items: center;
-        } 
+            justify-content: space-around;
+            
+            h1 {
+                font-size: 7rem;
+                max-width: 100%;
+            } 
+        }
+            
     }
-        
+            
     .cruise-ship {
-        position: static;
-        width: 20%;
-        margin: 0 auto;
-        // display: none;
+        display: none;
     }
 }
 
