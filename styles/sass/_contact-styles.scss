@@ -47,6 +47,11 @@
             li {
                 margin-right: 20px;
                 padding-bottom: 20px;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    color: $dandelion;
+                    cursor: pointer;
+                }
             }
         }
     }

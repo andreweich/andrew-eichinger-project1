@@ -1,11 +1,296 @@
 
 // MEDIA QUERIES 
 
-// home page
+// home page 
+
+@media (max-width: 1370px) {
+
+    .about-container {
+        grid-template-rows: 0;
+    }
+
+    .rope-boat,
+    .yacht {
+        position: relative;
+    }
+
+    .locations-container {
+        grid-row: 1, 2;
+    }
+}
 
 @media (max-width: 1240px) {
     
-    h1 {
-        font-size: 5rem;
+    .main-header {
+        
+        .header-content h1 {
+            font-size: 7rem;
+        }
+    } 
+
+
+}
+
+@media (max-width: 1123px) {
+    .winner .trip {
+        justify-content: center;
+
+        .trip-text {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+        
+        h2 {
+            line-height: 1.5;
+            padding-top: 30px
+        }
+    }
+
+    .lady {
+        margin-right: 0;
+    }
+        
+}
+
+@media (max-width: 1084px) {
+    
+    .main-header {
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+        .header-content h1 {
+            font-size: 5rem;
+            align-items: center;
+        } 
+    }
+        
+    .cruise-ship {
+        position: static;
+        width: 20%;
+        margin: 0 auto;
+        // display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-content {
+        align-items: center;
+
+        ul li {
+            margin: 10px
+        }
+    }
+
+    .main-header .header-content h1 {
+        max-width: 100%;
+    }
+
+    .section-1 {
+        padding: 50px 0 100px;
+
+        ul {
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+
+            li {
+                width: 100%;
+                
+                h2 {
+                    line-height: 1.5;
+                
+                }
+            }
+        }
+    }
+    
+    .about-container {
+        display: block;
+
+        h3 {
+            width: 100%;
+        }
+    }
+
+    .locations {
+        display: block;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .programs {
+        text-align: center;
+    }
+
+    h2 {
+        line-height: 2;
+    }
+}
+
+@media (max-width: 585px) {
+    
+    .main-header .header-content h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+    
+    .icons {
+        width: 50%;
+    }
+
+    .section-1 ul {
+        flex-wrap: nowrap;
+    }
+
+}
+
+// blog page 
+
+@media (max-width: 1399px) {
+
+    .pirate-ship {
+        position: static;
+    }
+    
+    .pirate-text {
+        padding-top: 0;
+    }
+
+    .comment-form {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 950px) {
+    .comment-container {
+        width: 90%;
+    }
+
+    .form-2 {
+        width: 100%;
+    }
+
+    .destination-container {
+        display: flex;
+        position: static;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mission-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .blog-main {
+        padding-top: 70px;
+        
+        .blog-container {
+            display: block;
+            width: 60%;
+        }
+    }
+
+    .pirate-ship {
+        margin-bottom: 50px;
+    }
+
+    .pirate-text {
+        text-align: center;
+
+        ul {
+            font-size: 1rem;
+        }
+    }
+
+    .next-destination {
+        padding: 70px;
+        text-align: center;
+
+        h2 {
+            line-height: 1.5;
+        }
+    }
+
+    .comment-form {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 585px) {
+    .next-destination {
+        padding: 20px;
+    }
+
+    .header-content ul li {
+        margin: 5px;
+    }
+
+    .comment-form h3 {
+        text-align: center;
+    }
+
+    .testimonial {
+        width: 100%;
+        padding-left: 0;
+        
+    }
+
+    .comment {
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+}
+
+// contact page
+
+@media (max-width: 1050px) {
+    .form {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 50px;
+        position: static;
+    }
+
+    .get-in-touch {
+        padding: 50px 0 100px;
+        
+        .contact-info {
+            flex-direction: column;
+
+            .socials li {
+                margin: 20px;
+            }
+        }
+    }
+
+    .social-location {
+        align-items: center;
+
+        .location {
+            align-items: center;
+            padding: 40px 0;
+        }
+    }
+
+    .contact-header .header-content {
+        align-items: center;
+
+        h1 {
+            font-size: 4.5rem;
+        }
     }
 }

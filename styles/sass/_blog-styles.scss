@@ -39,10 +39,9 @@
         grid-template-columns: 30% 70%;
         grid-template-rows: 950px 500px;
         gap: 0 100px;
-        
     }
 }
-        
+
 .bow {
     padding-left: 20px;
     img {
@@ -89,20 +88,18 @@
         line-height: 58px;
         letter-spacing: 0.8px;
     }
-
 }
 
 .pirate-ship {
     position: absolute;
     left: 0;
-    top: 40px
+    top: 40px;
 }
-    
 
 .pirate-text {
     padding: 20px;
     color: #fff;
-    padding-top: 450px ;
+    padding-top: 450px;
 
     p {
         padding-bottom: 40px;
