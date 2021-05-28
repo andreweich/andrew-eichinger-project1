@@ -1,5 +1,5 @@
 
-// home page styles 
+// HOME PAGE STYLES
 
 
 // header styles
@@ -42,10 +42,9 @@
             color: #fff;
             padding-bottom: 4px;
             &:hover {
-            border-bottom: 2px solid $dandelion;
+                border-bottom: 2px solid $dandelion;
             }
         }
-        
     }
 }
 
@@ -68,13 +67,11 @@
         flex-wrap: wrap;
         margin: 0 auto;
         
-
         li { 
             width: calc(50% - 60px);
             margin: 30px;
             padding-left: 30px;
             
-
             span {
                 height: 50px;
                 width: 50px;
@@ -92,7 +89,6 @@ i {
     font-size: 3rem;
 }
 
-
 // section 2 styles
 
 .about {
@@ -100,7 +96,6 @@ i {
     color: #fff;
     position: relative;
     padding: 100px 70px;
-    
 }
 
 .about-container {
@@ -118,11 +113,9 @@ i {
     grid-row: 2 / 3;
 }
 
-.programs-container {
+.program-container {
     grid-column: 2 / 3; 
 }
-
-
 
 .locations {
     display: flex;
@@ -218,4 +211,10 @@ footer {
     color: $twilight;
     font-size: 1.8rem;
     padding: 5px 0;
+}
+
+@media (max-width: 1240px) {
+    h1 {
+        font-size: 5rem;
+    }
 }

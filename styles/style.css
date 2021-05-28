@@ -282,8 +282,7 @@ img {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-family: "IM Fell English", serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -309,13 +308,41 @@ h3 {
 .button {
   display: inline-block;
   background-color: #FDD908;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   font-size: 2.24rem;
   line-height: 41.6px;
   padding: 0 15px;
   font-family: "IM Fell English", serif;
   color: #0D457F;
   text-transform: uppercase;
+}
+
+.button:hover,
+.button:focus-within {
+  background: #0D457F;
+  color: #EAFEFC;
+  border: 2px solid #FDD908;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-2:hover,
+.button-2:focus-within {
+  background: #EAFEFC;
+  border: 2px solid #FDD908;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-3:hover,
+.button-3:focus-within {
+  background: #EAFEFC;
+  color: #0D457F;
+  border: 2px solid #FDD908;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .main-header {
@@ -426,7 +453,7 @@ i {
   grid-row: 2/3;
 }
 
-.programs-container {
+.program-container {
   grid-column: 2/3;
 }
 
@@ -522,6 +549,11 @@ footer {
   padding: 5px 0;
 }
 
+@media (max-width: 1240px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
 .contact-header {
   background-image: url(../project-1-boat-ride-adventures/Boat-Ride-Adventures-final-assets/contact-header.jpg);
   background-repeat: no-repeat;
@@ -631,7 +663,7 @@ footer {
   border-bottom: 3px solid #FDD908;
 }
 
-textarea {
+.textarea-2 {
   background-color: #0D457F;
   color: #fff;
   resize: none;
@@ -654,4 +686,204 @@ textarea {
   text-transform: uppercase;
   width: 100%;
   height: 50px;
+}
+
+.blog-header {
+  background-image: url(../project-1-boat-ride-adventures/Boat-Ride-Adventures-final-assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  padding: 50px 0 40px;
+}
+.blog-header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50%;
+}
+.blog-header .header-content h1 {
+  max-width: 60%;
+  font-size: 7.9rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: initial;
+}
+
+.blog-main {
+  background: #EAFEFC;
+  position: relative;
+}
+.blog-main .blog-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 950px 500px;
+  gap: 0 100px;
+}
+
+.bow {
+  padding-left: 20px;
+}
+.bow img {
+  -webkit-box-shadow: -20px 20px #FDD908;
+          box-shadow: -20px 20px #FDD908;
+}
+
+.destination-container {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  top: -120px;
+}
+
+.next-destination {
+  padding: 70px 100px 70px 70px;
+  border-left: 5px solid #FDD908;
+  border-bottom: 5px solid #FDD908;
+}
+.next-destination p {
+  padding-bottom: 30px;
+}
+
+.mission-container {
+  margin-top: 80px;
+  background: #0D457F;
+}
+.mission-container h4 {
+  color: #FDD908;
+  font-size: 2.5rem;
+  line-height: 58px;
+  letter-spacing: 0.8px;
+}
+
+.pirate-ship {
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+
+.pirate-text {
+  padding: 20px;
+  color: #fff;
+  padding-top: 450px;
+}
+.pirate-text p {
+  padding-bottom: 40px;
+}
+
+.pirate-text ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.comment-form {
+  background-color: #EAFEFC;
+}
+.comment-form h3 {
+  color: #0D457F;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.comment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 0 0;
+  width: 60%;
+}
+
+.testimonial {
+  width: 80%;
+  padding-left: 30px;
+  padding-bottom: 100px;
+}
+
+.form-section {
+  background: #EAFEFC;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.form-2 {
+  background: none;
+  width: 60%;
+}
+.form-2 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+.form-2 form .name,
+.form-2 form .email {
+  background-color: #EAFEFC;
+  color: #0D457F;
+  width: calc((100% / 2) - 20px);
+  margin: 10px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border: none;
+  border-bottom: 3px solid #FDD908;
+}
+
+textarea {
+  background-color: #EAFEFC;
+  color: #0D457F;
+  resize: none;
+  width: 100%;
+  height: 200px;
+  margin: 30px 10px 30px;
+  padding: 20px;
+  border: 3px solid #FDD908;
+}
+
+.button-3 {
+  display: inline-block;
+  background-color: #0D457F;
+  border: 2px solid transparent;
+  font-size: 2.24rem;
+  line-height: 41.6px;
+  margin: 10px;
+  font-family: "IM Fell English", serif;
+  color: #FDD908;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
 }

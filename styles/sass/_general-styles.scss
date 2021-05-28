@@ -1,4 +1,5 @@
-// general styles
+
+// GENERAL STYLES
 
 .wrapper {
     max-width: 1200px;
@@ -48,8 +49,7 @@ img {
 h1, 
 h2, 
 h3, 
-h4, 
-h5 {
+h4 {
     font-family: $heading-font;
     text-transform: uppercase;
     font-weight: 400;
@@ -75,11 +75,36 @@ h3 {
 .button {
     display: inline-block;
     background-color: $dandelion;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     font-size: 2.24rem;
     line-height: 41.6px;
     padding: 0 15px;
     font-family: $heading-font;
     color: $twilight;
     text-transform: uppercase;
+}
+
+.button:hover, 
+.button:focus-within {
+    background: $twilight;
+    color: $ice;
+    border: 2px solid $dandelion;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-2:hover, 
+.button-2:focus-within {
+    background: $ice;
+    border: 2px solid $dandelion;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button-3:hover, 
+.button-3:focus-within {
+    background: $ice;
+    color: $twilight;
+    border: 2px solid $dandelion;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
