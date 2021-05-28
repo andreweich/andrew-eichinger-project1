@@ -58,11 +58,18 @@
     .main-header {
         padding-bottom: 0;
         margin-bottom: 0;
+        width: 100%;
 
-        .header-content h1 {
+        .header-content {
+            width: 100%;
+            
+            h1 {
             font-size: 5rem;
             align-items: center;
         } 
+        }
+        
+        
     }
         
     .cruise-ship {
