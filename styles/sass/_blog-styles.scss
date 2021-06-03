@@ -70,18 +70,9 @@
 // pirate section 
 
 .mission-container {
-    // display: flex;
-    // flex-direction: column;
-    
-    
     margin-top: 80px;
-    // position: relative;
     background: $twilight;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-end;
     
-
     h4 {
         color: $dandelion;
         font-size: 2.5rem;
@@ -130,9 +121,6 @@
 }
 
 .comment-container {
-    // display: grid;
-    // grid-template-columns: repeat(6, 1fr);
-    // grid-template-rows: repeat(3, 200px);
     display: flex;
     flex-wrap: wrap;
     

@@ -1,27 +1,28 @@
-// create variable for the modal
-const modalContainer = document.getElementById('theModal');
-
-// create variable for images to put inside modal
-// const images = document.getElementById('modal-image');
-// console.log(images);
+// variable for the modal container
+const modalContainer = document.querySelector('.modalContainer');
 
 // variable for modal image
-const modalImage = document.getElementById('img1');
+const modalImage = document.querySelector('.modalContent');
 
 // variable for caption text 
-const text = document.getElementById('caption');
+const modalText = document.querySelector('.caption');
 
+// variable to grab all images
 const images = document.querySelectorAll('img');
-Array.from(images).forEach((image, index) => {
+
+// forEach loop 
+images.forEach((image, index) => {
     image.addEventListener('click', function(){
         modalContainer.style.display = 'flex';
         modalImage.src = this.src;
-        text.innerHTML = this.alt;
+        modalText.innerHTML = this.alt;
     })
 });
 
-// images.addEventListener('click', function (){
-//     modalContainer.style.display = "block";
-//     modalImage.src = this.src; 
-//     text.innerHTML = this.alt;
-// })
+// close button 
+
+const closeModal = document.querySelector('.close');
+closeModal.addEventListener('click', function() {
+    modalContainer.style.display = "none";
+});
+
